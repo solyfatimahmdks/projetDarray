@@ -114,13 +114,151 @@ nav .active{
 /* .card-content{
   border: 1px solid green;
 } */
+
+/* responsive card */
+
+@media screen and (max-width: 437px){
+  .card-body{
+   margin-top: -120px !important;
+  }
+
+  .card-body a{
+  font-size: 10px !important;
+  text-align: center;
+  margin: 0;
+   
+  }
+  .card-body p{
+    font-size: 7px !important;
+  }
+  .card-body .card-title{
+    font-size: 10px !important;
+  }
+}
+@media screen and (max-width: 500px){
+  .card-body{
+   margin-top: -200px !important;
+  }
+
+  .card-body a{
+  font-size: 15px !important;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+   
+  }
+  .card-body .card-title{
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .input-group{
+    width: 100% !important;
+    box-shadow: 2px 2px 4px gray;
+    
+  }
+  /* .inti{
+    width: 50%;
+  } */
+  .line{
+    display: flex !important;
+    flex-direction: column !important;
+    /* background: #000; */
+    width: 80%;
+    margin: 0 auto !important;
+  }
+  .press{
+    height: 50%;
+  }
+  .press img{
+    width: 50%;
+    margin: 0;
+    /* display: none; */
+    height: 50%;
+  }
+  .card-body{
+    /* text-align: justify; */
+    font-size: 11px;
+    margin-top: -50%;
+    /* color: aqua; */
+    margin-left: 50%;
+  }
+  
+  .card-body a{
+    font-size:15px !important;
+    text-align: center;
+   
+  }
+  .card-body p{
+    font-size: 15px !important;
+  }
+}
+
 @media (max-width: 768px) {
    .card-content{
       display: flex;
       flex-direction: column;
       
     }
-    
+    .card-body h5{
+      font-size:20px !important;
+      /* display: none; */
+    }
+    .carte_formation{
+      display: flex !important;
+      flex-direction: column !important;
+      /* background: #000; */
+    }
+ 
+}
+@media screen and (min-width: 768px){
+  .line{
+    gap: 50px;
+  }
+  .press img{
+    width: 100%;
+    margin: 0;
+    /* display: none; */
+    height: 50%;
+  }
+  .card-body {
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+  .card-body p {
+    font-size:15px !important;
+    /* display: none; */
+  }
+  .card-body a{
+    font-size:18px !important;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 800px){
+  .line{
+    gap: 50px;
+  }
+  .press img{
+    width: 100%;
+    margin: 0;
+    /* display: none; */
+    height: 50%;
+  }
+  .card-body {
+    margin-top: 18%;
+    margin-left: 8%;
+  }
+  .card-body .card-title {
+    font-size:15px !important;
+  }
+  .card-body p {
+    font-size:12px !important;
+    /* display: none; */
+  }
+  .card-body a{
+    font-size:15px !important;
+    text-align: center;
+  }
 }
 
 [data-pagination] {
