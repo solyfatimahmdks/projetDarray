@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+.navbar-toggler{
+    width: 10% !important;
+    margin-right: 5%;
+}
+
+/* navigation */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.navigation .logoNav{
+    width: 80px;
+}
+
+.navigation .menu{
+    width: 65%;
+}
+
+.navigation .menu .first{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.navigation .menu ul li{
+    margin: 2% 2%;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+}
+
+.navigation .menu ul li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation .btn{
+    background-color: var(--orange);
+}
+
+.burger{
+    display: none !important;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.navigation .active{
+    color: var(--orange) !important;
+}
+
+.dropMenu{
+    display: none;
+}
+
+
+/* main */
+
+/* section bannière */
+.banniere {
+    background-image: url(../public/images/banniere-technologie-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+    margin-top: 0;
+}
+
+.banniereContent h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.banniereContent p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+.banniere a {
+    text-decoration: none;
+}
+
+.banniereContent .linkAccueil a {
+    color: white !important;
+}
+
+.banniereContent .linkPage a {
+    color: var(--orange);
+}
+
+/* section bannière */
+
+/* section services */
+
+.servicesContent h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.servicesContent p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 30%;
+}
+
+.servicesCart {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 50px;
+    row-gap: 50px;
+}
+
+
+/* flipCard */
+.test {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s linear;
+}
+
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-color: var(--orange);
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content p {
+    width: 90% !important;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.back-content button {
+    width: 60%;
+    font-size: 20px;
+    background-color: white;
+    color: var(--orange) !important;
+    font-weight: bold;
+}
+
+.test:hover>.front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.test:hover>.back {
+    transform: perspective(600px) rotateY(0deg);
+}
+
+/* flipCard */
+
+
+
+.servicesCart .carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30% 5%;
+    /*  */
+}
+
+.servicesCart .carte .front-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.servicesCart .carte .cartText {
+    font-size: 20px;
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.servicesCart .carte .iconService {
+    font-size: 120px;
+    color: var(--orange);
+    margin-bottom: 40px;
+}
+
+.servicesCart .modal h4 {
+    font-size: 35px;
+    margin-bottom: 4%;
+    font-weight: 700;
+    text-decoration: underline 4px solid var(--orange);
+    text-underline-offset: 15px;
+}
+
+.servicesCart .modal .modal-header button {
+    border: none;
+    background: none;
+}
+
+.servicesCart .modal .modal-header button i {
+    font-size: 40px;
+    color: var(--orange);
+}
+
+.servicesCart .modal .cartimg img {
+    width: 100%;
+}
+
+.servicesCart .modal .cart:hover {
+    position: relative;
+    bottom: 10px;
+    border-bottom: 2px solid var(--orange) !important;
+    transition: 1s ease !important;
+}
+
+.servicesCart .modal .cart p {
+    margin-top: 5%;
+}
+
+.servicesCart .modal .cart button {
+    background-color: white;
+    border: 2px solid var(--orange);
+    border-radius: 15px;
+    margin-bottom: 4%;
+}
+
+.servicesCart .modal .cart button:hover {
+    background-color: var(--orange);
+    border: none;
+}
+
+.servicesCart .modal .cart button:hover a {
+    color: white !important;
+}
+
+.servicesCart .modal a {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--orange) !important;
+    text-decoration: none;
+}
+
+.tmpModal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* section services */
+
+/* main */
+
+
+/* footer */
+footer {
+    background-color: var(--orange);
+    margin-top: 8%;
+}
+
+.footerContent .logoFooter {
+    background-color: white;
+    position: relative;
+    bottom: 40px;
+}
+
+.footerContent .logoFooter:hover {
+    bottom: 0;
+    background-color: rgb(0, 1, 5);
+    transition: 2s ease;
+}
+
+.footerContent .logoFooter img {
+    width: 100%;
+}
+
+.footerContent .contentFooter {
+    padding: 4% 8% 0 8%;
+}
+
+.contentFooter .footerIpt {
+    border-radius: 15px;
+    margin-bottom: 6%;
+}
+
+.contentFooter .footerIpt input {
+    width: 60%;
+    border-radius: 15px 0 0 15px;
+    background-color: var(--orange);
+    border: none;
+    padding-left: 20px;
+}
+
+.contentFooter .footerIpt input::placeholder {
+    font-size: 20px;
+    color: white;
+}
+
+.contentFooter .footerIpt button {
+    background-color: white;
+    width: 40%;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.contentFooter .pagesFooter h6 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.contentFooter .pagesFooter {
+    margin-bottom: 6%;
+}
+
+.contentFooter .pagesFooter li {
+    margin-bottom: 20px;
+}
+
+.contentFooter .pagesFooter li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: white !important;
+}
+
+.contentFooter .pagesFooter li a:hover {
+    margin-left: 20px;
+    color: black !important;
+    transition: 1s ease;
+}
+
+.contentFooter .traitFooter {
+    background-color: white;
+    height: 4px;
+    border: none;
+    margin-bottom: 2%;
+}
+
+.contentFooter .copyrightFooter .leftCopy {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contentFooter .copyrightFooter .rightCopy i {
+    color: white;
+    margin-left: 15px;
+}
+
+.contentFooter .copyrightFooter .rightCopy a:hover {
+    position: relative;
+    bottom: 8px;
+    transition: 2s ease;
+}
+
+/* footer */
+
+@media(max-width: 800px) {
+    /* navigation */
+    .navigation .menu{
+        display: none;
+    }
+
+    .navigation .logoNav{
+        width: 35px;
+    }
+
+    .navigation .btnNav{
+        display: none;
+    }
+
+    .navigation .burger{
+        display: block !important;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navigation .dropMenu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh !important;
+        background-color: white;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation .dropMenu .menuDrop{
+        border: 1px solid white;
+        width: 90%;
+    }
+
+    .menuDrop i{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        color: var(--orange);
+    }
+
+    .menuDrop ul{
+        padding: 0;
+    }
+
+    .menuDrop ul li{
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .menuDrop ul li a{
+        font-size: 20px;
+        color: black;
+    }
+
+    .menuDrop .btnDrop {
+        background-color: var(--orange);
+    }
+    /* navigation */
+
+    .footerContent .logoFooter {
+        background-color: brown;
+        border: 1px solid;
+        width: 100%;
+        display: block;
+    }
+
+    .banniere h1 {
+        font-size: 35px;
+    }
+
+    .banniere p {
+        font-size: 16px;
+    }
+
+    .services {
+        margin: 0 15px;
+    }
+
+    .servicesContent h3 {
+        font-size: 24px;
+    }
+
+    .servicesContent p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .servicesCart {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
+    }
+
+    .servicesCart .carte .iconService {
+        font-size: 60px;
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+
+    .back-content p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .back-content button {
+        width: 50% !important;
+        font-size: 18px;
+        background-color: white !important;
+        color: var(--orange) !important;
+        font-weight: bold;
+    }
+
+    .modal-body h4 {
+        font-size: 20px !important;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+    }
+
+    /* .modal-body .row{
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    } */
+
+    .tmpModal {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    footer {
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent {
+        display: block !important;
+
+    }
+
+    .footerContent .logoFooter {
+        background-color: brown;
+        border: 1px solid;
+        width: 100%;
+        display: block;
+    }
+
+
+    .contentFooter {
+        width: 100%;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .contentFooter .footerIpt {
+        display: block !important;
+        border: none !important;
+    }
+
+    .contentFooter .footerIpt input,
+    button {
+        width: 100% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .contentFooter .footerIpt input {
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+
+    .contentFooter .copyrightFooter {
+        display: block !important;
+        text-align: center;
+    }
+
+}
+
+/* 700px and 1300px */
+
+@media only screen and (min-width: 801px) and (max-width: 1300px) {
+
+   /* navigation */
+    .navigation .menu{
+        display: block;
+    }
+
+    .navigation .menu .logoNav{
+        width: 10%;
+    }
+
+    .navigation .menu a{
+        font-size: 13px !important;
+    }
+
+    .navigation .btn{
+        display: block;
+    }
+
+    .navigation .burger{
+        display: none;
+    }
+
+    /* navigation */
+
+
+
+    .modal-body h4 {
+        font-size: 20px !important;
+    }
+
+    .modal-body .row {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .modal-body .row .cl {
+        width: 100%;
+    }
+
+    .modal-body .row {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .servicesContent h3 {
+        font-size: 30px;
+    }
+
+
+    .servicesContent p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .servicesCart {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 50px;
+        row-gap: 50px;
+    }
+
+    .servicesCart .carte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30% 5%;
+    }
+
+    .servicesCart .carte .iconService {
+        font-size: 90px;
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+
+    .back-content p {
+        font-size: 12px;
+        margin-bottom: 20px !important;
+        border: 1px solid white;
+    }
+
+    .back-content button {
+        width: 50% !important;
+        font-size: 18px;
+        background-color: white;
+        color: var(--orange) !important;
+        font-weight: bold;
+    }
+
+    .tmpModal {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    footer {
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footerContent {
+        display: flex;
+    }
+
+    .footerContent .logoFooter {
+        background-color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .contentFooter {
+        margin-top: 20px;
+        width: 100%;
+        padding: 0 !important;
+    }
+}
+
+
+/*  */
+@media only screen and (min-width: 1301px) and (max-width: 1700px) {
+    .servicesCart .carte .iconService {
+        font-size: 90px;
+        color: var(--orange);
+        margin-bottom: 40px;
+    }
+
+    .back-content p {
+        font-size: 16px;
+        margin-bottom: 30px !important;
+    }
+}
