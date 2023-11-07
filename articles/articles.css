@@ -1,0 +1,118 @@
+#banner{
+    background: linear-gradient(0deg, #000000b1, #000000b1), url("https://img.freepik.com/photos-gratuite/gros-plan-mains-humaines-utilisant-telephone-portable_1262-14167.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais");
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    background-position: center;
+    color: white;
+}
+
+.article1{
+    background-image:url("https://img.freepik.com/photos-gratuite/coup-moyen-homme-portant-lunettes-vr_23-2149126949.jpg?w=996&t=st=1697690002~exp=1697690602~hmac=afb18cfdf25e05a50c8b21f461ad5d9384683795cf814c28063876d3587c779e");
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.article2{
+    background-image:url("https://img.freepik.com/photos-gratuite/vue-poste-travail-informatique-au-look-retro_23-2150805100.jpg?w=1380&t=st=1697705515~exp=1697706115~hmac=037265cfc9facad3da3b9e8e122d1bc0f1b6753097e34fa0e97b311c58483d1b");
+    height: 34vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+.article3{
+    background-image:url("https://img.freepik.com/photos-premium/affichage-graphique-point-doigt-humain-rendu-3d_493806-7331.jpg?w=900");
+    height: 34vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#la-une p{
+     font-size: 13px;
+     margin-top:20px ;
+}
+#la-une button{
+     color: white;
+}
+
+#grande .card img{
+    height: 50vh;
+}
+#recent .card p{
+    font-size: 10px;
+}
+button:hover{
+    background-color: var(--orange) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.modal button{
+    border-color: var(--orange)!important;
+    color: var(--orange)!important;
+}
+.modal button:hover{
+    border: none!important;
+    background-color: var(--orange);
+    color: white!important;
+}
+
+#list{
+    margin: 0 auto;
+}
+#mycard{
+    height: 20% !important;
+
+}
+@media screen and (min-width: 768px) and (max-width: 985px) {
+
+    #row-cols-2 ,#articleRow{
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        justify-content: center;
+        width: 100%;
+    }
+    #row-cols-2 .card , #articleRow .card {
+        width: 350px !important;
+
+    }
+   
+
+    
+}
+
+@media screen and (max-width: 768px){
+
+    #banner{
+        height: 50vh;
+    }
+
+    #services .card{
+        height: 20vh !important;
+
+    }
+    #une2{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0 auto !important;
+        justify-content: center;
+    }
+    #une2 p{
+        font-size: 12px;
+    }
+    
+    #comment{
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    #mycard{
+        height: 20% !important;
+
+    }
+}

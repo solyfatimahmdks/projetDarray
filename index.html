@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../public/style/style.css">
+    <link rel="stylesheet" href="../public/style/header.css">
+    <link rel="stylesheet" href="../public/style/footer.css">
+    <link rel="stylesheet" href="/accueil/accueil.css">
+
+    <script src="accueil.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="social">
+        <a href="#" class="text-decoration-none text-black bg-white p-2 mb-3 d-block shadow">774065868 &nbsp;&nbsp;<i class="fa-solid fa-phone orange"></i></a>
+        <a href="#" class="text-decoration-none text-white bgOrange p-2 mb-3 d-block shadow">djibysec8@gmail.com &nbsp;&nbsp;<i class="fa-regular fa-envelope "></i></a>
+        <a href="#" class="text-decoration-none text-black bg-white p-2 mb-3 d-block shadow">Daray Techologie &nbsp;&nbsp;<i class="fa-brands fa-youtube orange"></i></a>
+    </div>
+
+        <nav class="navbar navbar-expand-lg bg-white shadow sticky-top top-0">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="../public/images/logo.png" id="logo" alt=""></a>
+              <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                  <button type="button" class="btn-close btn-close-orange" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item text-black">
+                        <a class="nav-link text-black active fw-bold" aria-current="page" href="#">Accueil</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a href="../a-propos/a-propos.html" class="nav-link text-black fw-bold">A propos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../services/services.html" class="nav-link text-black fw-bold">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../formations/accueilforma/accueilforma.html" class="nav-link text-black fw-bold">Formations</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../articles/articles.html" class="nav-link text-black fw-bold">Articles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="../temoignage/temoignage.html" class="nav-link text-black fw-bold">Temoignages</a>
+                      </li>
+                  </ul>
+                  <div id="contact-us">
+                    <a href="" class="text-decoration-none " ><button class="btn bgOrange text-white p-2">Nous contacter</button></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section id="banner">
+            <div class="pt-5 banner-texte">
+                <h2 class="mb-4">
+                    Propose les meilleurs services et IT
+                </h2>
+                <p class="w-50">
+                    Transformez votre vision digitale en réalité avec notre expertise nous serons votre partenaire  vers le succès en ligne
+                </p>
+                <div class="mt-4">
+                    <a href="../contact/contact.html" type="button" id="btn-contact" class="btn text-white border border-2 radiusButton">Contacter nous maintenant !</a>
+                </div>
+            </div>
+        </section>
+
+
+    <main>
+        <!-- section services -->
+          <section id="services" class="mt-5">
+              <div class="title d-flex justify-content-center container">
+                  <div class="d-flex">
+                      <div id="circle">
+                          <i class="fa-regular fa-circle orange"></i>
+                      </div>
+                      <div>
+                          <i class="bi bi-dash"></i>
+                          <i class="bi bi-dash"></i>
+                          <i class="bi bi-dash"></i>
+                      </div>
+                  </div>
+                 <h5 class="mx-4">Services</h5>
+                 <div class="d-flex">
+                      <div>
+                          <i class="bi bi-dash"></i>
+                          <i class="bi bi-dash"></i>
+                          <i class="bi bi-dash"></i>
+                      </div>
+                     <div id="circle">
+                         <i class="fa-regular fa-circle orange"></i>
+                     </div>
+              </div>
+              </div>
+              <div class="container mt-4">
+                  <div class="row row-cols-1 row-cols-md-3 g-4" id="row-cols-2">
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-solid fa-laptop-code mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-solid fa-laptop mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-solid fa-mobile mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-solid fa-palette mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-solid fa-server mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card text-center border-0 shadow">
+                          <i class="fa-brands fa-digital-ocean mt-5 orange"></i>
+                          <div class="card-body">
+                            <h5 class="card-title">Creation de site web</h5>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+              </div>
+          </section>
+  
+          <!-- section about -->
+          <section class="mt-5" id="about">
+            <div class="title d-flex justify-content-center container">
+              <div class="d-flex">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h5 class="mx-4" class="h5">A propos</h5>
+             <div class="d-flex">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+          </div>
+          </div>
+          <div class=" container">
+            <div class="card mb-3 border-0 mt-4">
+                <div class="row g-0">
+                  <div class="imageabout col-md-6">
+                    <img src=" https://img.freepik.com/photos-premium/employes-entreprise-marketing-celebrent-resultats-reussis-du-projet-demarrage-croissance-financiere-equipe-du-departement-financier-afro-americain-met-ses-mains-ensemble-pour-celebrer-succes-entreprise_482257-42703.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais" class="img-fluid" alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h3 class="card-title d-flex justify-content-center fw-bold">QUI SOMMES NOUS?</h3>
+                      <br>
+                      <span class="cardtext fs-6">Daaray Technologie est une école virtuelle gratuite composée de groupe de développeurs très passionnés.</span>
+                      <br><br>
+                      <span class="cardtext fs-6">L'idée de cet institut est d'aider à pouvoir créer des sites web 
+                        et des applications de bout à bout facilement avec des astuces 
+                        simples et chirurgicales, mais aussi de maîtriser toutes les bases 
+                        en informatique sans dépenser de l'argent avec les formations payantes.</span>
+                        <br><br>
+                      <div class="satatistiq mt-2 d-flex justify-content-center">
+                        <div>
+                          <span class="badge1 text-center mx-3">5</span>
+                          <p class="text-center mt-2 fw-bold">Applications <br> web créées</p>
+                        </div>
+                        <div>
+                          <span class="badgeprim text-center mx-3">1</span>
+                          <p class="text-center mt-2 fw-bold">Applications <br> web créées</p>
+                        </div>
+                        <div>
+                          <span class="badge1 text-center mx-3">3</span>
+                          <p class="text-center mt-2 fw-bold">Applications <br> web créées</p>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+            </div>
+          </div>
+          </section>
+  
+          <!-- section -->
+          <section id="why">
+            <div class="title d-flex justify-content-center container">
+              <div class="d-flex designIcons">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h5 class="mx-3">Pourquoi vous devez nous choisir</h5>
+             <div class="d-flex designIcons">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+          </div>
+            </div>
+            <div class="container mt-5">
+              <div class="row row-cols-1 row-cols-md-2 ">
+                <div class="col">
+                  <h4>
+                    Pourquoi nos clients choisissent-ils de travailler avec nous ?
+                  </h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!
+                  </p>
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <p class="me-3 orange fs-4 fw-bold answer">01</p>
+                      <div>
+                        <h6>
+                          Des technologies de pointe
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="me-3 orange fs-4 fw-bold answer">02</p>
+                      <div>
+                        <h6>
+                          Des technologies de pointe
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati
+                        </p>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <p class="me-3 orange fs-4 fw-bold answer">03</p>
+                      <div>
+                        <h6>
+                          Des technologies de pointe
+                        </h6>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <img src="https://img.freepik.com/vecteurs-libre/illustration-personnes-dessinees-main-posant-questions_23-2148906555.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=sph" class="img-fluid mt-4" id="image-why" alt="">
+                </div>
+  
+              </div>
+            </div>
+          </section>
+  
+          <section id="exploit">
+            <div class="title d-flex justify-content-center my-3">
+              <div class="d-flex">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h5 class="mx-4">Exploits</h5>
+             <div class="d-flex">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+          </div>
+            </div>
+            <div class="py-5 bgExploit">
+              <div class="container my-4">
+                <div class="row row-cols-1 row-cols-md-3 g-2" id="row-cols-2">
+                    <div class="col">
+                      <div class="card text-center border-0 rounded-0 shadow text-black">
+                        <i class="fa-solid fa-check-double mt-5"></i>
+                        <div class="card-body">
+                          <h5 class="card-title orange fs-2 fw-bold num" data-val="700">000</h5>
+                          <p class="fw-bold">Projets Finis</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card text-center border-0 shadow text-black">
+                        <i class="fa-regular fa-face-smile mt-5"></i>
+                        <div class="card-body">
+                          <h5 class="card-title orange fs-2 fw-bold num" data-val="200">000</h5>
+                          <p class="fw-bold">Clients Satistfaits</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card text-center border-0 shadow text-black">
+                        <i class="fa-solid fa-e mt-5"></i>
+                        <div class="card-body">
+                          <h5 class="card-title orange fs-2 fw-bold num" data-val="20">00</h5>
+                          <p class="fw-bold">Experience</p>
+                        </div>
+                      </div>
+                    </div>                
+                  </div>
+            </div>
+            </div>
+  
+          </section>
+  
+          <section id="temoignages">
+            <div class="title d-flex justify-content-center my-3">
+              <div class="d-flex">
+                  <div id="circle">
+                      <i class="fa-regular fa-circle orange"></i>
+                  </div>
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+              </div>
+             <h5 class="mx-4">Temoignages</h5>
+             <div class="d-flex">
+                  <div>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                      <i class="bi bi-dash"></i>
+                  </div>
+                 <div id="circle">
+                     <i class="fa-regular fa-circle orange"></i>
+                 </div>
+          </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+              <div id="carouselExample" class="carousel slide d-flex justify-content-center">
+                <div class="carousel-inner w-75">
+                  <div class="carousel-item active">
+                    <div class="card border-0" >
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="https://img.freepik.com/photos-premium/enfant-noir-afro-heureux-s-amuser-fond-blanc-style-pixar2_27550-4938.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=ais" class="img-fluid w-75" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Prenom nom</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+                            <p class="card-text"><small class="text-body-secondary">Metier</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card border-0" >
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="https://img.freepik.com/photos-premium/portrait-belle-jeune-femme-aux-cheveux-boucles_847439-4471.jpg?w=740" class="img-fluid w-75" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Prenom nom</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+                            <p class="card-text"><small class="text-body-secondary">Metier</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>            
+                   </div>
+                  <div class="carousel-item">
+                    <div class="card border-0" >
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="https://img.freepik.com/photos-premium/logo-mascotte-fille-noire-fond-blanc-uni-generative-ai_896194-576.jpg?w=826" class="img-fluid w-75" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Prenom nom</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+                            <p class="card-text"><small class="text-body-secondary">Metier</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </section>
+  
+          <section id="formations" class="mt-3">
+            <div class="container d-flex justify-content-between">
+              <div class="title d-flex justify-content-center my-3">
+                <div class="d-flex designIcons">
+                    <div id="circle">
+                        <i class="fa-regular fa-circle orange"></i>
+                    </div>
+                    <div>
+                        <i class="bi bi-dash"></i>
+                        <i class="bi bi-dash"></i>
+                        <i class="bi bi-dash"></i>
+                    </div>
+                </div>
+               <h5 class="mx-4">Formations</h5>
+               <div class="d-flex designIcons">
+                    <div>
+                        <i class="bi bi-dash"></i>
+                        <i class="bi bi-dash"></i>
+                        <i class="bi bi-dash"></i>
+                    </div>
+                   <div id="circle">
+                       <i class="fa-regular fa-circle orange"></i>
+                   </div>
+            </div>
+              </div>
+              <div>
+                <a href="../formations/accueilforma/accueilforma.html" class="text-decoration-none text-black"><button class="btn bg-white border border-2 border-black radiusButton">Decouvrir nos formations</button></a>
+              </div>
+            </div>
+            <div class="container mt-4">
+              <div class="row row-cols-1 row-cols-md-3 g-3" id="row-cols-2">
+                  <div class="col">
+                    <div class="card border-0 shadow">
+                      <img src="https://img.freepik.com/photos-gratuite/codeur_1098-18084.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=sph" class="img-fluid" alt="" srcset="">
+                      <div class="card-body">
+                        <h5 class="card-title">Développeur Web Front-End</h5>
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-regular fa-star orange"></i>
+                          </div>
+                          <div>
+                            <span>(247 vues)</span>
+                          </div>
+                        </div>
+                        <p class="my-3">
+                          Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro
+                        </p>
+                        <p class="fw-bold fs-5">
+                          +24 Cours
+                        </p>
+                        <!-- <div class="d-flex justify-content-center">
+                          <button class="btn bg-white border border-2 border-black radiusButton">Decouvrir la formation</button>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-0 shadow">
+                      <img src="https://img.freepik.com/vecteurs-libre/illustration-concept-abstrait-javascript_335657-3702.jpg?size=626&ext=jpg&ga=GA1.1.212687153.1691348973&semt=sph" class="img-fluid" alt="" srcset="">
+                      <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-regular fa-star orange"></i>
+                          </div>
+                          <div>
+                            <span>(247 vues)</span>
+                          </div>
+                        </div>
+                        <p class="my-3">
+                          Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro
+                        </p>
+                        <p class="fw-bold fs-5">
+                          +24 Cours
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-0 shadow">
+                      <img src="data:image/png;base64,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" class="img-fluid" alt="" srcset="">
+                      <div class="card-body">
+                        <h5 class="card-title">UML</h5>
+                        <div class="d-flex justify-content-between">
+                          <div>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-solid fa-star orange"></i>
+                            <i class="fa-regular fa-star orange"></i>
+                          </div>
+                          <div>
+                            <span>(247 vues)</span>
+                          </div>
+                        </div>
+                        <p class="my-3">
+                          Devenez un développeur Web Front-End en réalisant une variété de projets pour votre portfolio - devenez un pro
+                        </p>
+                        <p class="fw-bold fs-5">
+                          +24 Cours
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+          </section>
+  
+      </main>
+
+    <footer>
+      <div class="footerContent mx-md-5 row">
+        <div class="col-12 col-md-4 logoFooter border">
+          <img src="../public/images/logo.png" alt="">
+        </div>
+        <div class="col-12 col-md-8 contentFooter">
+          <form class="border form d-flex footerIpt">
+            <input type="email" class="form-control" id="email" placeholder="Votre addresse email...">
+            <button class="btn" id="btnFooter">S'incrire maintenant!</button>
+          </form>
+          <div class="row pagesFooter">
+            <div class="col-12 col-md-6">
+              <h6>Support</h6>
+              <ul>
+                <li><a href="../confidentialité/confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="../cookies/cookies.html">Politique d'utilisation des cookies</a></li>
+                <li><a href="../condition-generale/condition.html">Condition générale</a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <h6>A propos</h6>
+              <ul>
+                <li><a href="../a-propos/a-propos.html">A propos</a></li>
+                <li><a href="../a-propos/a-propos.html">Team</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="traitFooter"></div>
+          <div class="copyrightFooter d-flex justify-content-between">
+            <div class="leftCopy">
+              <p>Design by Groupe4, 2023</p>
+            </div>
+            <div class="rightCopy">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script src="../public/script/script.js"></script>
+    <script src="../public/script/FontAwesome.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../public/script/header.js"></script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+:root{
+    --orange: #E94D1A;
+    --bleu: #0B3255;
+    --transparent: #96A7B6;
+    --gris: #E7E1E1;
+}
+
+.bgOrange{
+    background: var(--orange) ;
+}
+
+.bgBleu{
+    background: var(--bleu);
+}
+
+.bgGris{
+    background-color: var(--gris);
+}
+
+.orange{
+    color: var(--orange);
+}
+

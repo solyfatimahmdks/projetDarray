@@ -1,0 +1,218 @@
+/* navigation */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3%;
+}
+
+.navigation .logoNav {
+    width: 80px;
+}
+
+.navigation .menu {
+    width: 65%;
+}
+
+.navigation .menu .first {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 3%;
+}
+
+.navigation .menu ul li {
+    margin: 2% 2%;
+    list-style-type: none;
+    margin-bottom: 0 !important;
+}
+
+.navigation .menu ul li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation .btn {
+    background-color: var(--orange) !important;
+}
+
+.navigation .btn a{
+    text-decoration: none;
+}
+
+.btnNav a{
+    color: white !important;
+    font-weight: bold;
+}
+
+.burger {
+    display: none !important;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.navigation .active {
+    color: var(--orange) !important;
+}
+
+.dropMenu {
+    display: none;
+}
+
+.dropMenu ul a{
+    font-weight: bold;
+}
+
+.dropMenu button{
+    width: 100%;
+    background: var(--orange) !important;
+}
+
+.dropMenu button a{
+    color: white !important;
+    font-weight: bold;
+}
+
+/* navigation */
+
+
+@media(max-width: 800px) {
+
+    /* navigation */
+    .navigation .menu {
+        display: none;
+    }
+
+    .navigation .logoNav {
+        width: 35px;
+    }
+
+    .navigation .btnNav {
+        display: none;
+    }
+
+    .navigation .burger {
+        display: block !important;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .navigation .dropMenu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh !important;
+        background-color: white;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navigation .dropMenu .menuDrop {
+        border: 1px solid white;
+        width: 90%;
+    }
+
+    .menuDrop i {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        color: var(--orange);
+    }
+
+    .menuDrop ul {
+        padding: 0;
+    }
+
+    .menuDrop ul li {
+        list-style: none;
+        margin-bottom: 25px;
+    }
+
+    .menuDrop ul li a {
+        font-size: 20px;
+        color: black;
+    }
+
+    .menuDrop .btnDrop {
+        background-color: var(--orange);
+    }
+
+    /* navigation */
+
+}
+
+
+@media only screen and (min-width: 801px) and (max-width: 1300px) {
+
+    /* navigation */
+    .navigation .menu {
+        display: block;
+    }
+
+    .navigation .menu .logoNav {
+        width: 10%;
+    }
+
+    .navigation .menu a {
+        font-size: 13px !important;
+    }
+
+    .navigation .btn {
+        display: block;
+    }
+
+    .navigation .burger {
+        display: none;
+    }
+
+    /* navigation */
+
+}
+
+/* Social Icon */
+#social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    transform: translateX(-270px);
+    z-index: 3;
+
+}
+
+#social a {
+    width: 300px;
+    text-align: right;
+    border-radius: 20px;
+    transition: 1s;
+    transition-property: transform;
+
+}
+
+#social a:hover {
+    transform: translateX(200px);
+}
+
+.fa-circle {
+    font-size: 10px;
+}
+
+#circle {
+    margin: -2px 7px 0 7px;
+}
+
+/* Social Icon */
